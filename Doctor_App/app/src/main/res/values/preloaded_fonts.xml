@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/advent_pro</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/caveat_brush</item>
+        <item>@font/vollkorn</item>
+        <item>@font/work_sans</item>
+        <item>@font/yesteryear</item>
+    </array>
+</resources>

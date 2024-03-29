@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xmlarge">18dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="inputs_height">40dp</dimen>
+</resources>

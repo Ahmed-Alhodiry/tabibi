@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg1"
+    android:padding="0dp"
+    tools:context=".Patient_New_Appointment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/toolbar_shape"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <ImageButton
+                    android:id="@+id/back_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:foregroundGravity="left|center"
+                    android:background="@drawable/shape1"
+                    android:onClick="back"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/font5"
+                    android:gravity="center"
+                    android:text="حجز موعد طبي"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginBottom="30dp"
+                    android:background="@android:color/white"
+                    android:padding="2dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_gravity="center|top"
+                            android:drawableRight="@drawable/ic_information"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:text="بيانات المريض"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@color/sky" />
+
+                        <View
+                            android:id="@+id/dv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="?android:attr/listDivider" />
+
+                        <EditText
+                            android:id="@+id/patient_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/shape1"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:hint="اسم المريض"
+                            android:inputType="textPersonName"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/patient_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/shape1"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:hint="عنوان المريض"
+                            android:inputType="textPersonName"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/patient_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/shape1"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:maxLength="9"
+                            android:hint="رقم المريض"
+                            android:inputType="textPersonName"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/patient_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/shape1"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:maxLength="3"
+                            android:hint="عمر المريض"
+                            android:inputType="textPersonName"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/shape1"
+                            android:gravity="center"
+                            android:hint="Patient Gender"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/white">
+
+
+                            <Spinner
+                                android:id="@+id/patient_gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="2.8"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvSelectedDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="18dp"
+                            android:background="@drawable/shape1"
+                            android:fontFamily="@font/font5"
+                            android:gravity="center"
+                            android:text="الرجاء تحديد تاريخ الموعد"
+                            android:textColor="@color/grey"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            tools:ignore="RtlCompat" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/book_now_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn_specific_shape"
+                    android:fontFamily="serif"
+                    android:text="احجز الآن"
+                    android:onClick="bookNow"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

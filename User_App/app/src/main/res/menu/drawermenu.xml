@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+
+
+        <item
+            android:title="لوحة التحكم | ADMIN"
+            android:id="@+id/about_id"
+            android:icon="@drawable/info"/>
+        <item
+            android:title="@string/share_app"
+            android:id="@+id/share_id"
+            android:icon="@drawable/share2"/>
+        <item
+            android:title="@string/evaluation_app"
+            android:id="@+id/evaluation_id"
+            android:icon="@drawable/star"/>
+        <item
+            android:title="@string/common_questions"
+            android:id="@+id/common_questions_id"
+            android:icon="@drawable/question"/>
+            <item
+                android:title="@string/telling_issue"
+                android:id="@+id/telling_issue"
+                android:icon="@drawable/info"/>
+    </group>
+
+    <item  android:title="@string/communicate">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="@string/call"
+                    android:id="@+id/call_id"
+                    android:icon="@drawable/ic_call2"/>
+
+                <item
+                android:title="@string/whatsapp"
+                android:id="@+id/whatsapp_id"
+                android:icon="@drawable/whatsapp"/>
+
+            <item
+                android:title="@string/Email"
+                android:id="@+id/email"
+                android:icon="@drawable/ic_baseline_email_24"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

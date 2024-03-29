@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name" translatable="false">طـبـيـبـي  |  Tabiby</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="forget_your_password">نسيت كلمة المرور ؟؟</string>
+    <string name="fill_your_data_to_recover_password">املئ بياناتك لإسترجاع كلمة المرور</string>
+    <string name="phone_number">رقم التلفون</string>
+    <string name="get_password">استرجع كلمة المرور</string>
+    <string name="error_check_your_internet_connection">!! Error , check your internet connection</string>
+    <string name="there_isn_t_anyone">There isn\'t anyone</string>
+    <string name="welcome">Welcome...</string>
+    <string name="vhi">VHI-GFA-ME</string>
+    <string name="sorry">Sorry !</string>
+    <string name="wrong_login_data">البيانات اللتي ادخلتها اما خاطئة او ناقصة! \n يرجى التأكد من صحتها</string>
+    <string name="ok">OK</string>
+    <string name="success">Success</string>
+    <string name="signup_succesfuly">تمت عملية انشاء حسابك بنجاح</string>
+    <string name="information">Information</string>
+    <string name="Dont_have_account">  مستخدم جديد؟     <font color="#0000ff">  أنشأ حسابك!  </font></string>
+    <string name="Already_have_account">  لديك حساب مسبقاً؟  <font color="#0000ff">  تسجيل الدخول   </font></string>
+    <string name="arabic_font_1">font/arabic_font_1.ttf</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="Full_Name">اسمك الكامل</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="Siginup">انشاء حساب</string>
+    <string name="common_questions">الأسئلة الشائعة</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about_app">حول التطبيق</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="evaluation_app">تقييم التطبيق</string>
+    <string name="communicate">تواصل معنا</string>
+    <string name="whatsapp">واتساب</string>
+    <string name="call">اتصال</string>
+    <string name="sms">SMS راسلنا</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="apoinments">حجوزاتي</string>
+    <string name="telling_issue">إبلاغ عن خلل في التطبيق</string>
+    <string name="about_us">About Us</string>
+
+
+    <string name="login_title">Good Job!</string>
+    <string name="login_process">Processing login to your account&#8230;</string>
+    <string name="login_success">Login Successfully&#8230;</string>
+    <string name="login_failed">Invalid Email or Password!</string>
+    <string name="login_disabled">Account has been disabled, please contact administrator to enable your account</string>
+    <string name="do_not_have_account">Don\'t have an account?</string>
+    <string name="register_now">Register Now</string>
+    <string name="txt_login_now">LOGIN NOW</string>
+
+    <!--register-->
+    <string name="register_title">Thanks for Register</string>
+    <string name="register_success">Register successfully&#8230;</string>
+    <string name="register_process">Registering your account&#8230;</string>
+    <string name="register_exist">Email address already used!</string>
+    <string name="terms_text">By creating an account, you agree with our</string>
+    <string name="terms_n_privacy">Terms &amp; Privacy</string>
+    <string name="title_please_wait">Please Wait&#8230;</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!--button-->
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_send">SEND</string>
+
+    <!--forgot password-->
+    <string name="forgot_message">Enter the email that used during registration.</string>
+    <string name="forgot_failed_message">Email is not found in our database!</string>
+    <string name="forgot_success_message">Password has been sent on your mail!</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--form-->
+    <string name="edt_name">Name</string>
+    <string name="edt_email">Email</string>
+    <string name="edt_password">Password</string>
+
+    <!-- toolbar and title-->
+    <string name="title_menu_profile">Profile</string>
+    <string name="title_menu_edit_profile">Edit Profile</string>
+    <string name="title_menu_close">Close</string>
+    <string name="title_menu_save">Save</string>
+    <string name="title_menu_later">Favorite</string>
+    <string name="title_menu_share">Share</string>
+    <string name="title_menu_search">Search&#8230;</string>
+    <string name="title_login">LOGIN</string>
+    <string name="title_register">REGISTER</string>
+    <string name="title_forgot_password">FORGOT PASSWORD</string>
+    <string name="txt_suggested">Suggested</string>
+
+    <!--bottom navigation title-->
+    <string name="title_nav_home">Home</string>
+    <string name="title_nav_category">Category</string>
+    <string name="title_nav_video">Coins</string>
+    <string name="title_nav_favorite">Favorite</string>
+
+    <string name="click_to_see_position_in_map"><u><font color="#ff0000">  (اضغط هنا) </font></u>لرؤية موقع العيادة على خرائط جوجل</string>
+
+    <!-- Gender -->
+    <string-array name="gender_array">
+        <item><font color="#7A8584" size="17">حدد الجنس</font></item>
+        <item><font color="#000" size="17">ذكــر</font></item>
+        <item><font color="#000" size="17">أنـثـى</font></item>
+    </string-array>
+
+    <string-array name="specializes_array">
+        <item><font color="#0000ff" size="14">التخصص الطبي</font></item>
+        <item><font color="#0000ff" size="14">العظام</font></item>
+        <item><font color="#0000ff" size="14">الأسنان</font></item>
+        <item><font color="#0000ff" size="14">العيون</font></item>
+        <item><font color="#0000ff" size="14">الأطفال</font></item>
+        <item><font color="#0000ff" size="14">أمراض القلب</font></item>
+        <item><font color="#0000ff" size="14">الأذن والحنجرة</font></item>
+        <item><font color="#0000ff" size="14">أمراض الجلدية</font></item>
+        <item><font color="#0000ff" size="14">الدماغ والجهاز العصبي</font></item>
+        <item><font color="#0000ff" size="14">الجهاز التناسلي والعقم</font></item>
+    </string-array>
+
+    <string-array name="gender2_array">
+        <item>حدد الجنس</item>
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

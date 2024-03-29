@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="Theme.Project60" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryVariant">@color/status_color</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/status_color</item>
+    <item name="colorSecondaryVariant">@color/status_color</item>
+    <item name="colorOnSecondary">@color/status_color</item>
+    <!-- Status bar color. -->
+    <!-- Customize your theme here. -->
+  </style>
+
+  <style name="IconOverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+    <item name="android:tint">@color/white</item>
+  </style>
+  <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowFullscreen">true</item>
+  </style>
+  <style name="FullScreenThemeWithStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:statusBarColor">@color/status_color2</item>
+    <item name="actionOverflowButtonStyle">@style/IconOverFlow</item>
+  </style>
+
+  <style name="AppTheme.GrayStatusBar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimaryDark">@color/status_color</item>
+  </style>
+
+  <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/slide_up</item>
+    <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+  </style>
+
+  <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+    <item name="android:fontFamily">@font/font5</item>
+  </style>
+
+</resources>

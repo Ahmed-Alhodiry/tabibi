@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_186sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="6dp"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dots_img"
+        app:layout_constraintVertical_bias="0.38">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font5"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/grey"
+                android:drawableLeft="@drawable/ic_pharmacy"
+                android:text="  طـبـيـبـي  |  Tabiby "
+                android:textSize="16sp" />
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/font5"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="طـبـيـبـي هو تطبيق متخصص في عرض شامل لجميع العيادات والدكاترة في اليمن، يتميز بسهولة الاستخدام، يشمل معظم الدكاترة ومختلف انواع التخصصات الطبية، يوفر معلومات كل دكتور من مؤهلات و رقم الهاتف والايميل و..الخ بالإضافة إلى تحديد موقع العيادة لكي يسهل
+للمريض أو مستخدم هذا التطبيق عملية البحث، فهو يوفر و ينظم الوقت "
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/sky" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/button_background"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:fontFamily="@font/font5"
+            android:gravity="center"
+            android:text="الــتــالــي"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/doc_img"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_155sdp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/shape1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_m6" />
+
+    <ImageView
+        android:id="@+id/dots_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_img"
+        app:srcCompat="@drawable/ic_dots2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_shape"
+        android:onClick="skip"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="تخطـي"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

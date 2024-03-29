@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "21457072072",
+    "project_id": "clinics-d5e4d",
+    "storage_bucket": "clinics-d5e4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21457072072:android:a1c2a1cf7ac9079cd81afd",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21457072072-24ulcc6ljjh090j0lr9t6dju92pvmtlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQAYm1JinOHqXfSsM1x828czrmeHzO4_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21457072072-24ulcc6ljjh090j0lr9t6dju92pvmtlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21457072072:android:d1dae4ea6aa274a3d81afd",
+        "android_client_info": {
+          "package_name": "com.salah_doos.test2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21457072072-24ulcc6ljjh090j0lr9t6dju92pvmtlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQAYm1JinOHqXfSsM1x828czrmeHzO4_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21457072072-24ulcc6ljjh090j0lr9t6dju92pvmtlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:paddingBottom="10dp"
+    android:background="#F5A623"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/doctor_image7" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:padding="2dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="center|top"
+                        android:drawableRight="@drawable/ic_information"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="بيانات الدكتور"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue" />
+
+                    <View
+                        android:id="@+id/dv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:id="@+id/tv_dr_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="اسم الدكتور"
+                        android:inputType="textPersonName"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_dr_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="البريد الإلكتروني"
+                        android:inputType="textEmailAddress"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_dr_educationDegree"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="الدرجة العلمية للدكتور والخبرة العملية"
+                        android:inputType="text"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_clinicName"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="اسم العيادة"
+                        android:inputType="text"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_dr_phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="رقم التلفون"
+                        android:inputType="phone"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_specialize"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape1"
+                        android:gravity="center"
+                        android:hint="Patient Gender"
+                        android:orientation="horizontal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white">
+
+
+                        <Spinner
+                            android:id="@+id/tv_dr_specialize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2.8"
+                            android:gravity="center"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_dr_bookingPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="سعر الحجز"
+                        android:inputType="numberDecimal"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_dr_kuraimiAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="رقم حساب الكريمي"
+                        android:inputType="numberDecimal"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="العنوان"
+                        android:inputType="text"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="موقع العيادة في خرائط جوجل longitude"
+                        android:inputType="number"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/shape1"
+                        android:fontFamily="@font/font5"
+                        android:gravity="center"
+                        android:hint="موقع العيادة في خرائط جوجل latitude"
+                        android:inputType="number"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_AddNewDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/font5"
+                android:text="إضافة دكتور جديد"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

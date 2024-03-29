@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vie_bg"
+    android:padding="0dp"
+    tools:context=".Fragment_Doctor_WorkTime">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/about_us_background"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginBottom="0dp"
+                android:padding="4dp"
+                android:background="@color/colordisable"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:padding="2dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/container_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colordisable"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/container_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colordisable"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableLeft="@drawable/ic_calender_checked"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:text="Work Time"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/blue"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:id="@+id/dv3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="#1E88E5" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/Saturday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/border_shape"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:fontFamily="serif"
+                                        android:gravity="center"
+                                        android:shadowColor="#1E88E5"
+                                        android:text="Saturday"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blue"
+                                        android:textSize="13sp" />
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/Sunday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_column="0"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/border_shape"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:fontFamily="serif"
+                                        android:gravity="center"
+                                        android:text="Sunday"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blue"
+                                        android:textSize="13sp" />
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/Monday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/border_shape"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:fontFamily="serif"
+                                        android:gravity="center"
+                                        android:text="Monday"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blue"
+                                        android:textSize="13sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/Tuesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/border_shape"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:fontFamily="serif"
+                                        android:gravity="center"
+                                        android:text="Tuesday"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blue"
+                                        android:textSize="13sp" />
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/Wednesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_column="0"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/border_shape"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:fontFamily="serif"
+                                        android:gravity="center"
+                                        android:text="Wednesday"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blue"
+                                        android:textSize="13sp" />
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/Thursday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/border_shape"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:fontFamily="serif"
+                                        android:gravity="center"
+                                        android:text="Thursday"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blue"
+                                        android:textSize="13sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.checkbox.MaterialCheckBox
+                                    android:id="@+id/Friday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_shape"
+                                    android:checked="false"
+                                    android:enabled="false"
+                                    android:fontFamily="serif"
+                                    android:gravity="center"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="10dp"
+                                    android:text="Friday"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blue"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_saveChanges3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_shape3"
+                android:enabled="false"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Save Changes"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
+
+<!--
+
+
+-->

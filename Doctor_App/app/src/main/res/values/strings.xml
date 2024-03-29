@@ -1,0 +1,124 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Tabiby طبيبي</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about_app">About App</string>
+    <string name="share_app">Share App</string>
+    <string name="evaluation_app">Rate App</string>
+    <string name="common_questions">Common Questions</string>
+    <string name="communicate">Communicate</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="call">Call</string>
+    <string name="sms">SMS Message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="apoinments">حجوزاتي</string>
+    <string name="telling_issue">Telling an Error</string>
+    <string name="about_us">About Us</string>
+
+
+    <string name="login_title">Good Job!</string>
+    <string name="login_process">Processing login to your account&#8230;</string>
+    <string name="login_success">Login Successfully&#8230;</string>
+    <string name="login_failed">Invalid Email or Password!</string>
+    <string name="login_disabled">Account has been disabled, please contact administrator to enable your account</string>
+    <string name="do_not_have_account">Don\'t have an account?</string>
+    <string name="register_now">Register Now</string>
+    <string name="txt_login_now">LOGIN NOW</string>
+
+    <!--register-->
+    <string name="register_title">Thanks for Register</string>
+    <string name="register_success">Register successfully&#8230;</string>
+    <string name="register_process">Registering your account&#8230;</string>
+    <string name="register_exist">Email address already used!</string>
+    <string name="terms_text">By creating an account, you agree with our</string>
+    <string name="terms_n_privacy">Terms &amp; Privacy</string>
+    <string name="title_please_wait">Please Wait&#8230;</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!--button-->
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_send">SEND</string>
+
+    <!--forgot password-->
+    <string name="forgot_message">Enter the email that used during registration.</string>
+    <string name="forgot_failed_message">Email is not found in our database!</string>
+    <string name="forgot_success_message">Password has been sent on your mail!</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--form-->
+    <string name="edt_name">Name</string>
+    <string name="edt_email">Email</string>
+    <string name="edt_password">Password</string>
+
+    <!-- toolbar and title-->
+    <string name="title_menu_profile">Profile</string>
+    <string name="title_menu_edit_profile">Edit Profile</string>
+    <string name="title_menu_close">Close</string>
+    <string name="title_menu_save">Save</string>
+    <string name="title_menu_later">Favorite</string>
+    <string name="title_menu_share">Share</string>
+    <string name="title_menu_search">Search&#8230;</string>
+    <string name="title_login">LOGIN</string>
+    <string name="title_register">REGISTER</string>
+    <string name="title_forgot_password">FORGOT PASSWORD</string>
+    <string name="txt_suggested">Suggested</string>
+
+    <!--bottom navigation title-->
+    <string name="title_nav_home">Home</string>
+    <string name="title_nav_category">Category</string>
+    <string name="title_nav_video">Coins</string>
+    <string name="title_nav_favorite">Favorite</string>
+
+    <!-- Rating Bar  -->
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colordisable</item>
+        <item name="colorControlActivated">@color/coloractivated</item>
+    </style>
+
+    <!-- SETTING PAGE STRINGS -->
+
+    <string name="distance_onoff" tools:ignore="MissingTranslation">Search by Radius</string>
+    <string name="distance_txt" tools:ignore="MissingTranslation">DISTANCE</string>
+
+    <!--Settings for default values in layouts-->
+
+    <string name="todo" tools:ignore="MissingTranslation">TODO</string>
+    <string name="profile_name_txt" tools:ignore="MissingTranslation">Dr: Salah ghazi</string>
+    <string name="profile_description_txt" tools:ignore="MissingTranslation">Salah ghazi</string>
+    <string name="rating_txt" tools:ignore="MissingTranslation">RATING</string>
+    <string name="rating_number" tools:ignore="MissingTranslation">4.0</string>
+    <string name="timing_txt" tools:ignore="MissingTranslation">TIMING</string>
+    <string name="hint_time_txt" tools:ignore="MissingTranslation">4:00 PM to 10:00 AM</string>
+    <string name="title_txt_header" tools:ignore="MissingTranslation">Title</string>
+    <string name="txt_title" tools:ignore="MissingTranslation">Lorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliqua</string>
+
+
+    <string name="profile" tools:ignore="MissingTranslation">Profile</string>
+    <string name="book_appointment" tools:ignore="MissingTranslation">Book Appointment</string>
+    <string name="click_to_see_position_in_map"><u><font color="#ff0000">Click here</font></u> to see the clinic position in google map</string>
+
+    <!-- Gender -->
+    <string-array name="gender_array">
+        <item><font color="#000" size="14">Select Gender</font></item>
+        <item><font color="#000" size="14">Male</font></item>
+        <item><font color="#000" size="14">Female</font></item>
+    </string-array>
+
+    <!-- Specialize -->
+    <string-array name="specializes_array">
+        <item><font color="#0000ff" size="14">Your Specialization</font></item>
+        <item><font color="#0000ff" size="14">Eyes</font></item>
+        <item><font color="#0000ff" size="14">Bones</font></item>
+        <item><font color="#0000ff" size="14">Teeth</font></item>
+        <item><font color="#0000ff" size="14">Children</font></item>
+        <item><font color="#0000ff" size="14">Ear and Larynx</font></item>
+        <item><font color="#0000ff" size="14">Heart Diseases</font></item>
+        <item><font color="#0000ff" size="14">Genitals Diseases</font></item>
+        <item><font color="#0000ff" size="14">Brain Diseases</font></item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.salah.hodiedahclinicsapp_doctors2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/doctors_app_icon"
+        android:roundIcon="@drawable/doctors_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HodiedahClinicsApp_Doctors2">
+        <activity android:name=".Splash_Activity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DoctorsMainActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CommonQuestionsActivity"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Telling_Error_In_App"
+            android:theme="@style/FullScreenTheme" />
+
+        <activity
+            android:name=".Doctor_PersonalDataFile"
+            android:theme="@style/FullScreenTheme">
+
+        </activity>
+
+        <activity
+            android:name=".Forget_Password"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Doctors_Signin_and_Signup"
+            android:theme="@style/FullScreenTheme">
+
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+
+
+
+
+
+
+
+
+</manifest>

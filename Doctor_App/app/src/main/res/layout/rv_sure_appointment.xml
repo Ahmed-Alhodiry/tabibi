@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="10dp"
+    android:paddingLeft="1dp"
+    android:paddingTop="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/border_shape"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageButton
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_true_icon"
+                app:tint="@color/md_grey_800" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="1dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_arrow"
+                    app:tint="@color/md_grey_800" />
+
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Patient Name : "
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Salah Doos"
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_arrow"
+                    app:tint="@color/md_grey_800" />
+
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Patient Address :"
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_patient_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Madenah Al-Ommal"
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_arrow"
+                    app:tint="@color/md_grey_800" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Patient Age : "
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_patient_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="22 Years old"
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_arrow"
+                    app:tint="@color/md_grey_800" />
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Patient Gender : "
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_patient_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Male"
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_arrow"
+                    app:tint="@color/md_grey_800" />
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Patient Phone : "
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_patient_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="775480089 "
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dv2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_dot"
+                    app:tint="@color/md_grey_800" />
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="Booking Date : "
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_booking_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:padding="2dp"
+                    android:text="2021-11-10"
+                    android:textColor="#042129"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+            <!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_dr_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dr : "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/tv_doctor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salah Alkhameri"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_doctor_department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:text="Ophthalmology"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_register_price"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price : "
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_doctor_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Street : "
+                        android:textStyle="bold"/>
+                        -->
+
+            <View
+                android:id="@+id/dv1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="0dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_specific_shape"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cb_attendAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:buttonTint="@color/white"
+                android:checked="false"
+                android:enabled="true"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Attend the Appointment ?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
