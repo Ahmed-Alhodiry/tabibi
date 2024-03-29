@@ -13,4 +13,4 @@ Tabiby Is a Medical Service Application
 برعاية / الجمعية العربية الأمريكية للتعليم  والتطوير.
 بغرض المشاركة في الهاكاثون الرمضاني 2024م:1445هـ.
 
-رابط الفيديو النهائي للمشروع :
+رابط الفيديو النهائي للمشروع :https://drive.google.com/file/d/1_3oYYMLpKLWKGp-xn1EQYCKqsMB5srEV/view?usp=drivesdk
